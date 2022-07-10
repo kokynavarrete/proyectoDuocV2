@@ -27,3 +27,9 @@ export const guardarParvularia = (nombre, rut, edad, direccion) => {
         nombre: nombre, rut: rut, edad: edad, direccion: direccion
     })
 }
+
+export const guardarAlumno = (nombre, rut, edad, direccion) => {
+    addDoc(collection(db, 'alumnos'), {
+        nombre: nombre, rut: rut, edad: edad, direccion: direccion
+    })
+}
