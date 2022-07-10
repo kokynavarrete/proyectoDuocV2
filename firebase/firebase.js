@@ -28,4 +28,12 @@ export const guardarParvularia = (nombre, rut, edad, direccion) => {
     })
 }
 
+<<<<<<< HEAD
 export const listarAlumnos = () => getDocs(collection(db, 'alumnos'));
+=======
+export const guardarAlumno = (nombre, rut, edad, direccion) => {
+    addDoc(collection(db, 'alumnos'), {
+        nombre: nombre, rut: rut, edad: edad, direccion: direccion
+    })
+}
+>>>>>>> 014faadc523d336ee843856bd5da1c9b5ac469f7
