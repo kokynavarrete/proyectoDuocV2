@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/agregar-par.css">
+    <title>Panel Administrador CRUD</title>
+</head>
+
+<body>
+    <div class="contenedor-g">
+        <h1 id="h1">Panel Administrador</h1>
+
+        <form id="formulario-agregar-parvularia" class="adminAgregar">
+            <!--Nombre-->
+            <h2>Agregar Parvularia</h2>
+            
+            <label for="nombreCompleto">Nombre Completo: </label><br />
+            <input type="text" id="nombreP" placeholder="Ingresa el nombre"><br />
+
+            <!--RUT-->
+            <label for="rutParvularia">RUT: </label><br />
+            <input type="number" id="rutP" placeholder="Sin Puntos"><br />
+
+            <!--Edad-->
+            <label for="edadParvularia">Edad: </label><br />
+            <input type="number" id="edadP" placeholder="Ingresa la edad"><br />
+
+            <!--Direccion-->
+            <label for="direccion">Dirección: </label><br />
+            <textarea name="direccion" id="direccionP" rows="5" cols="55" placeholder="Domicilio"></textarea><br />
+            <br />
+            <button id="btn-agregar-parvularia">Agregar</button>
+
+        </form>
+
+    </div
+
+    <!--Modulo firebase-->
+    <script type="module" src="index.js"></script>
+
+</body>
+
+</html>

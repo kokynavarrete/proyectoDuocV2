@@ -1,0 +1,54 @@
+*{
+    font-family: 'Segoe UI';
+    padding: 0px;
+    margin: 0px;
+   
+}
+
+.titulo{
+    display: block;
+    float: left;
+    width: 100%;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-top: 10px;
+    
+}
+
+.titulo h1{
+    display: block;
+    float: left;
+    width: 1400px;
+    color: #8CD77A;
+    
+}
+.titulo p,a{
+    margin-top: 5px;
+    padding-left: 30px;
+    display: block;
+    float: left;
+    width: 95px;
+    height: 50px;
+    text-decoration: none;
+    color:  #8CD77A;
+    
+}
+
+.c-lista{
+
+    background-color: white;
+    width: 500px;
+}
+
+table, th, td {
+    border: 1px solid black;
+
+    border-collapse: collapse;
+}
+
+th{
+    font-size:20px ;
+    font-weight: lighter;
+
+}
+

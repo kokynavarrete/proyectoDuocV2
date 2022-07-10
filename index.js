@@ -3,11 +3,15 @@ import { guardarParvularia } from './firebase/firebase.js';
 
 
 //Evento que arranca la app
-window.addEventListener('DOMContentLoaded', () => {
-    console.log("trabajando")
-});
+window.addEventListener('DOMContentLoaded',async () => {
+    
+    
+    
+})
 
-const formularioParbularia = document.getElementById('formulario-agregar-parvularia');
+
+
+const formularioParbularia = document.getElementById('formulario-agregar-parvularia')
 
 
 formularioParbularia.addEventListener('submit', (e) => {
@@ -23,4 +27,17 @@ formularioParbularia.addEventListener('submit', (e) => {
     formularioParbularia.reset()
 
 
-});
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
