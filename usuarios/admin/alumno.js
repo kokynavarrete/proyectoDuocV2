@@ -1,14 +1,10 @@
-
-import { guardarAlumno } from './firebase/firebase.js';
-
-
+import { guardarAlumno } from '../../firebase/firebase.js';
 //Evento que arranca la app
 window.addEventListener('DOMContentLoaded', () => {
-    console.log("trabajando")
+    console.log("trabajando alumno")
 });
 
 const formularioAlumno = document.getElementById('formulario-agregar-alumno');
-
 
 formularioAlumno.addEventListener('submit', (e) => {
     e.preventDefault()

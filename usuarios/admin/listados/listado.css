@@ -36,7 +36,7 @@
 
 .c-lista{
 
-    background-color: white;
+   
     width: 500px;
 }
 
@@ -49,6 +49,7 @@ table, th, td {
 th{
     font-size:20px ;
     font-weight: lighter;
+    background-color: #8CD77A;
 
 }
 

@@ -1,9 +1,6 @@
 // Import the functions you need from the SDKs you need
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
 import { getFirestore, collection, addDoc,getDocs } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-firestore.js"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -21,19 +18,27 @@ const app = initializeApp(firebaseConfig);
 //Conexion a db
 const db = getFirestore()
 
-//Funciones
+
+//FuncionesAgregar----------------------------------------------------
+
+//Parvularia
 export const guardarParvularia = (nombre, rut, edad, direccion) => {
     addDoc(collection(db, 'parvularias'), {
         nombre: nombre, rut: rut, edad: edad, direccion: direccion
     })
 }
 
-<<<<<<< HEAD
-export const listarAlumnos = () => getDocs(collection(db, 'alumnos'));
-=======
+//Alumnos
 export const guardarAlumno = (nombre, rut, edad, direccion) => {
     addDoc(collection(db, 'alumnos'), {
         nombre: nombre, rut: rut, edad: edad, direccion: direccion
     })
 }
->>>>>>> 014faadc523d336ee843856bd5da1c9b5ac469f7
+
+//Funciones Listar---------------------------------
+//Parvularias
+export const listarParvularias = () => getDocs(collection(db,'parvularias'));
+
+//Alumnos
+export const listarAlumnos = () => getDocs(collection(db, 'alumnos'));
+

@@ -4,34 +4,27 @@ const contenedorListaAlumnos = document.getElementById('listado')
 //Evento que arranca la app
 window.addEventListener('DOMContentLoaded',async () => {
     
-    const querySnapshot =  await listarAlumnos()
-
-
-    let html = ''
-    querySnapshot.forEach(doc =>{
-        const alumnos = doc.data()
-        html += `
-            <table class="c-lista">
-            <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td> ${alumnos.rut}</td>
-    <td>${alumnos.nombre}</td>
-    <td>${alumnos.edad}</td>
-  </tr>
-            
-
+  const querySnapshot =  await listarAlumnos()
+  let html = ''
+  querySnapshot.forEach(doc =>{
+    const alumnos = doc.data()
+      html += `
+             <table class="c-lista">
+              <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              </tr>
+              <tr>
+              <td> ${alumnos.rut}</td>
+              <td>${alumnos.nombre}</td>
+              <td>${alumnos.edad}</td>
+              </tr>
             <table>
-  
-            
-           
         `
-    })
+  })
 
-    contenedorListaAlumnos.innerHTML = html
-    
+  contenedorListaAlumnos.innerHTML = html
+  
     
 })

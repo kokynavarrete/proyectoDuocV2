@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/agregar-nino.css">
+    <title>Panel Administrador CRUD</title>
+</head>
+
+<body>
+    <h1>Panel Administrador</h1>
+
+    <form id="formulario-agregar-alumno" class="adminAgregar">
+       
+        <h1>Agregar Alumno</h1>
+        <!--Nombre-->
+        <label for="nombreAlumno">Nombre Completo: </label><br />
+        <input type="text" id="nombreA" placeholder="Ingresa el nombre"><br />
+
+        <!--RUT-->
+        <label for="rutAlumno">Rut: </label><br />
+        <input type="number" id="rutA" placeholder="Sin puntos, guión ni DV"><br />
+
+        <!--Edad-->
+        <label for="edadAlumno">Edad: </label><br />
+        <input type="number" id="edadA" placeholder="Ingresa la edad"><br />
+
+        <!--Direccion-->
+        <label for="direccionAlumno">Dirección: </label><br />
+        <textarea name="direccion" id="direccionA" rows="5" cols="55" placeholder="Domicilio"></textarea><br />
+        <br />
+        <button id="btn-agregar-alumno">Agregar</button>
+        <button id="btn-agregar-alumno"><a href="index.html">Volver</a></button>
+
+    </form>
+
+   
+
+    <!--Modulo firebase-->
+    <script type="module" src="alumno.js"></script>
+
+</body>
+
+</html>
