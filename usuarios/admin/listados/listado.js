@@ -11,9 +11,9 @@ window.addEventListener('DOMContentLoaded',async () => {
       html += `
              <table class="c-lista">
               <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Age</th>
+              <th>RUT</th>
+              <th>Nombre</th>
+              <th>Edad</th>
               </tr>
               <tr>
               <td> ${alumnos.rut}</td>
