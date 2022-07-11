@@ -35,6 +35,16 @@ export const guardarAlumno = (nombre, rut, edad, direccion) => {
     })
 }
 
+//Anuncios
+export const guardarAnuncio = (titulo, nombre,descripcion) => {
+    addDoc(collection(db, 'anuncios'), {
+        titulo: titulo, nombre: nombre, descripcion:descripcion
+    })
+}
+
+
+
+
 //Funciones Listar---------------------------------
 //Parvularias
 export const listarParvularias = () => getDocs(collection(db,'parvularias'));

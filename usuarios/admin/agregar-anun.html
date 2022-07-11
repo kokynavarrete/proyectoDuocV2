@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/agregar-anun.css">
+    <title>Panel Administrador CRUD</title>
+</head>
+
+<body>
+    <div class="contenedor-g">
+        <h1 id="h1">Panel Administrador</h1>
+
+        <form id="formulario-agregar-anuncios" class="adminAgregar">
+            <!--Nombre-->
+            <h2>Agregar Anuncio</h2>
+            
+            <label for="tituloA">Titulo: </label><br />
+            <input type="text" id="tituloA" placeholder="Ingresa el tutulo"><br />
+
+            <!--RUT-->
+            <label for="nombreA">Nombre : </label><br />
+            <input type="text" id="na" placeholder="Nombre"><br />
+
+            <!--Direccion-->
+            <label for="descA">Contenido: </label><br />
+            <textarea name="descA" id="descA" rows="5" cols="55" placeholder="Contenido Anuncio"></textarea><br />
+            <br />
+            <button id="btn-agregar-parvularia">Agregar</button>
+
+        </form>
+
+    </div
+
+    <!--Modulo firebase-->
+    <script type="module" src="anuncio.js"></script>
+
+</body>
+
+</html>
